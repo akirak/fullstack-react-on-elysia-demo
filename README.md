@@ -23,11 +23,11 @@ Elysia + Astro Containers is an alternative to [Next.js](https://nextjs.org/),
 
 A dynamic content (from the query parameter) is rendered by the server:
 
-[http response body](./doc/ssr-demo.png)
+![http response body](./doc/ssr-demo.png)
 
 The component is interactive on the client side:
 
-[client-side component](./doc/react-demo.mp4)
+![client-side component](./doc/react-demo.gif)
 
 ## How to run the application
 
