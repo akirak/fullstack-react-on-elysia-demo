@@ -1,4 +1,4 @@
-# Full-Stack Server-Rendered Elysia Application (with Astro)
+# React Server + Client Component on Elysia
 
 This is an example of full-stack [Elysia](https://github.com/elysiajs/elysia)
 application with both Server-Side Rendering (SSR) capability and client-side
@@ -19,9 +19,9 @@ Elysia + Astro Containers is an alternative to [Next.js](https://nextjs.org/),
 [Remix](https://remix.run/), [HonoX](https://github.com/honojs/honox),
 [Vike](https://vike.dev/), etc.
 
-## In action
+## Demo
 
-A dynamic content (from the query parameter) is rendered by the server:
+A dynamic content (from the query parameter) is rendered on the server side:
 
 ![http response body](./doc/ssr-demo.png)
 
@@ -29,7 +29,7 @@ The component is interactive on the client side:
 
 ![client-side component](./doc/react-demo.gif)
 
-## How to run the application
+## How to run the application on your machine
 
 You need [Bun](https://bun.sh/) to run this demo application.
 
