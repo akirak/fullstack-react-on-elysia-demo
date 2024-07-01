@@ -1,0 +1,43 @@
+{
+  "name": "elysia-astro-demo",
+  "version": "0.1",
+  "module": "src/index.js",
+  "author": "Akira Komamura",
+  "license": "(ISC OR GPL-3.0)",
+  "scripts": {
+    "build:astro": "astro build",
+    "check:astro": "astro check --root src/astro",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "dev:elysia": "bun run --watch src/index.ts",
+    "dev": "astro build && bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/react": "^3.6.0",
+    "@elysiajs/static": "^1.0.3",
+    "astro": "^4.11.3",
+    "elysia": "latest",
+    "react": "^19.0.0-rc-58af67a8f8-20240628",
+    "react-dom": "^19.0.0-rc-58af67a8f8-20240628"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.21.2",
+    "@astrojs/language-server": "^2.10.0",
+    "@astrojs/ts-plugin": "^1.8.0",
+    "@eslint-react/eslint-plugin": "^1.5.19",
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc",
+    "bun-types": "latest",
+    "eslint": "^9.6.0",
+    "eslint-plugin-astro": "^1.2.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "typescript": "^5.5.2",
+    "typescript-language-server": "^4.3.3"
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc"
+  }
+}

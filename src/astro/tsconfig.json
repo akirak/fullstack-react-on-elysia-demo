@@ -1,0 +1,28 @@
+{
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "@astrojs/ts-plugin"
+      }
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "baseUrl": ".",
+    "types": [
+      "bun-types",
+      "astro/client"
+    ],
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "**/*.astro",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}
