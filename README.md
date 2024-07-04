@@ -11,19 +11,27 @@ This is **not Elysia on Astro** (that is, an Elysia endpoint added to the
 file-based routing hierarchy of Astro). It is **Astro islands on Elysia**, which
 is made possible thank to the experimental [Container
 API](https://docs.astro.build/en/reference/container-reference/) available since
-[Astro 4.09](https://astro.build/blog/astro-490/). Instead of the file-based
-routing, you will use Elysia to define routes, where you can use
-[Typebox](https://github.com/sinclairzx81/typebox) to validate query parameters,
-cookies, and form data. Most of the server-side work is done in Elysia, and you
-need to know a little knowledge about Astro, such as [client
+[Astro 4.09](https://astro.build/blog/astro-490/). The pros and cons of this approach are as follows:
+
+Pros:
+
+-  More Elysia-centric: Instead of the file-based routing, you will use Elysia to define routes,
+where you can use [Typebox](https://github.com/sinclairzx81/typebox) to validate
+query parameters, cookies, and form data. Most of the server-side work is done
+in Elysia, and you need to know a little knowledge about Astro, such as [client
 directives](https://docs.astro.build/en/reference/directives-reference/#client-directives)
 for components.
 
+Cons:
+
+- Awful developer experience: You have to first build frontend components using
+  Astro and then start the server of Elysia. You can't do live development of
+  frontend. This is a deal breaker, so I am looking for an approach that runs
+  Elysia as a Vite plugin. After all, Astro may not fit into the solution.
+
 Elysia + Astro Containers is a simpler alternative to
 [Next.js](https://nextjs.org/), [Remix](https://remix.run/),
-[HonoX](https://github.com/honojs/honox), [Vike](https://vike.dev/), etc. This
-would be more suitable for small but highly interactive web applications that
-have more API endpoints than page types.
+[HonoX](https://github.com/honojs/honox), [Vike](https://vike.dev/), etc.
 
 ## Demo
 
